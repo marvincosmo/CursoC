@@ -30,6 +30,7 @@ void main() {
     fgets(ender, 50, stdin);
     int q1 = strcspn(nome, "\n");
     nome[q1] = '\0';
-
+    int q2 = strcspn(ender, "\n");
+    ender[q2] = '\0';
     printf("Você digitou \"%s\", que mora na \"%s\".", nome, ender);
 }
